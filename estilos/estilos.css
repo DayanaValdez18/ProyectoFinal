@@ -1,0 +1,282 @@
+* {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+
+}
+/* flex box para contenido + footer */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebedf1;
+}
+
+
+h1 {
+    color: #817298;
+    font-size: 30px;
+}
+
+#h1titulo {
+color: #817298;
+font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+  color: #9a92af;
+  margin-bottom: 2rem;
+}
+
+h5 {
+    color: #5a5a5a;
+    font-size: 20px;
+}
+
+header {
+    position: fixed; /*Fijo*/
+    width: 100%;
+    height: 70px;
+    z-index: 1000;/*por encima de todos los elementos*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra  */
+    background-color: #ffffff9c;
+    padding: 0px;
+}
+ 
+
+
+ /*Logo*/
+ .icono {
+    padding-left: flex;
+    padding-right: wrap;
+    width: 100px;
+    height: 70px;
+}
+
+
+.hero-box {
+ text-align: left;
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; 
+  gap: 1rem;   
+}
+.content {
+  text-align: left;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #7e62b3;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #6e55a1;
+}
+
+
+
+
+/*estilo de grid*/
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*6 columnas por defecto*/
+    gap: 20px;
+    background-color: #ebedf1;
+}
+
+/*estilo de cada item*/
+.carta {
+
+    background-color: #BEBEBE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(51, 50, 50, 0.1);
+    padding: 30px;
+    transition: transform 0.3s;
+    text-align: center;
+
+}
+
+.carta:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+/*Formulario*/
+.formularioContacto {
+    background-color: #93AEC1;
+    text-align: center;
+    color: #0b0700;
+}
+
+/* NUEVO: Contenedor en fila */
+#contactenos_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* <-- Esto alinea verticalmente */
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #ebedf1;
+}
+
+
+/* NUEVO: Control del ancho de cada elemento */
+.item2 {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.item2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-form {
+    background-color: #93aec127;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px F1F1F1;
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #817298;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-color: #817298;
+}
+
+.contact-form button {
+    background-color: #817298;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #817298;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer siempre abajo*/
+ footer {
+    background-color: #817298;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px
+ }
+
+ .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #fffefe;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #445bf0;
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #464646;
+}
+
+
+
+ /*Responsivo*/
+/*tablets: 2 columnas*/
+@media (max-width:1024px) {
+    .grid2 {
+        grid-template-columns: repeat(4fr);
+        
+    }
+    
+}
+
+/*Celulares: 1 columna*/
+@media (max-width: 600px){
+    .grid2 {
+        grid-template-columns: 1fr;
+        
+    }
+}
