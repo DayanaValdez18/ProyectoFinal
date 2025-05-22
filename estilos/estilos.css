@@ -268,24 +268,8 @@ header {
     color: #fffefe;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
 
-.footer-links ul li {
-    margin-bottom: 10px;
-}
 
-.footer-links ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-links ul li a:hover {
-    color: #445bf0;
-}
 
 
 
