@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #ebedf1;
+    background-color: #dff5f3
 }
 
 
@@ -21,7 +21,7 @@ h1 {
 #h1grid2 {
     color: #817298;
     font-size: 30px;
-    background-color: #dddddd;
+    background-color: #d2e7e6;
     padding: 20px;
 }
 
@@ -48,7 +48,7 @@ header {
 
 
 .hero {
-    background-image: linear-gradient(to top,#ffffff86  0%, #817298 100%);
+    background-image: linear-gradient(to top,#dff5f3  0%,  #BDE2DF 100%);
     height: 400px;
 
 }
@@ -67,25 +67,29 @@ header {
 .texto-header{
     color: #fff;
     max-width: 600px;
+    
 }
 
 .tituloheader{
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
 }
 .parrafoheader{
     line-height: 1.5;
     margin: .5em 0;
     font-size: 20px;
     color: grey;
+    font-weight: bold;
 }
 .botonheader{
-    background-color: #ffffff;
+    background-color: #817298;
     text-decoration: none;
-    color: #817298;
+    color: #ffffff;
     padding: 1em 2em;
     display: inline-block;
     border-radius: 25px;
     text-align: center;
+    font-size: 18px;
 
 }
 
@@ -112,7 +116,7 @@ header {
     grid-template-columns: repeat(3,1fr);
     /*6 columnas por defecto*/
     gap: 20px;
-    background-color: #dddddd;
+    background-color: #d2e7e6;
     height: 230px;
     padding: 50px;
 }
@@ -160,7 +164,7 @@ header {
   gap: 40px;
   flex-wrap: wrap;
   padding: 50px;
-  background-color: #ebedf1;
+  background-color: #dff5f3;
 }
 
 
@@ -289,7 +293,7 @@ header {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
-    color: #464646;
+    color: #fcfafa;
 }
 
 
@@ -308,13 +312,13 @@ header {
 @media (max-width: 600px){
     .grid2 {
         grid-template-columns: 1fr;
-        padding-bottom: 500px;
+        padding-bottom: 600px;
     }
     .img-header {
     width: 95%;
     }
     .hero {
-        height: 500px;
+        height: 650px;
     }
     .botonheader{
     text-align: center;  
