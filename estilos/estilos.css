@@ -46,6 +46,34 @@ header {
     padding: 0px;
 }
 
+ nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+ }
+
+ nav li {
+    flex: 1;
+ }
+
+ nav a {
+    display: block;
+    /*hace que el enlace ocupe todo el area del <li>*/
+    padding: 24px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #817298;
+    transition: background-color 0.3s;
+
+ }
+
+ nav a:hover {
+background-color: #817298;
+color: white;
+ }
+
 
 .hero {
     background-image: linear-gradient(to top,#dff5f3  0%,  #BDE2DF 100%);
@@ -132,7 +160,7 @@ header {
 /*estilo de cada item*/
 .carta {
 
-    background-color: #BEBEBE;
+    background-color: #cfcece9c;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(51, 50, 50, 0.1);
     padding: 30px;
@@ -264,7 +292,7 @@ header {
 }
 
 .footer-logo p {
-    font-size: 14px;
+    font-size: 12px;
     color: #fffefe;
 }
 
@@ -276,7 +304,7 @@ header {
 .footer-bottom {
     text-align: center;
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 9px;
     color: #fcfafa;
 }
 

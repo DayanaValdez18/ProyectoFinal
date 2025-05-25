@@ -1,13 +1,14 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f8fb;
+  font-family: sans-serif;
+  background: #dff5f3;
   padding: 20px;
 }
+
 
 .container {
   max-width: 600px;
   margin: auto;
-  background: white;
+  background: rgba(255, 255, 255, 0.288);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
@@ -15,7 +16,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #817298;
 }
 
 .pregunta {
@@ -23,11 +24,11 @@ h1 {
 }
 
 button {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   padding: 10px 20px;
-  background: #54a0ff;
-  color: white;
+  background: #817298;
+  color: rgba(255, 255, 255, 0.938);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -39,3 +40,14 @@ button {
   font-weight: bold;
   font-size: 1.2em;
 }
+
+.carta {
+  background: #fffafc;
+  border-left: 6px solid #bb8fce;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
