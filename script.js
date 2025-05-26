@@ -6,10 +6,10 @@
     const tristeza = parseInt(document.querySelector('input[name="tristeza"]:checked')?.value || 0);
     const enojo = parseInt(document.querySelector('input[name="enojo"]:checked')?.value || 0);
 
-    // Guardar las emociones y sus puntajes en un objeto
+    
     const emociones = { ansiedad, estres, tristeza, enojo };
 
-    // Determinar cuál emoción tiene el mayor valor
+    
     let emocionPredominante = null;
     let maxValor = -1;
 
@@ -20,7 +20,7 @@
       }
     }
 
-    // Mostrar la carta correspondiente a la emoción detectada
+    // Mostrar la carta de la emoción detectada
     mostrarCarta(emocionPredominante);
   }
 
@@ -28,7 +28,8 @@
     const resultado = document.getElementById("resultado");
     let contenido = "";
 
-    // Dependiendo de la emoción detectada, mostramos una carta personalizada
+
+    //Carta
     switch (emocion) {
       case "ansiedad":
         contenido = `
@@ -62,7 +63,7 @@
         contenido = `<p>No pudimos determinar claramente tu estado emocional.</p>`;
     }
 
-    // Agregamos un botón para reiniciar el formulario
+    // reiniciar el formulario
     contenido += `
       <button onclick="reiniciarFormulario()" style="margin-top: 15px;">🔁 Reiniciar</button>
     `;
@@ -72,9 +73,7 @@
   }
 
   function reiniciarFormulario() {
-    // Resetea el formulario (borra todas las respuestas)
     document.getElementById("emocionalForm").reset();
 
-    // Limpia el resultado mostrado (la carta)
     document.getElementById("resultado").innerHTML = "";
   }
