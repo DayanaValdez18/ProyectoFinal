@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Calma – Cuestionario Emocional</title>
-  <link rel="stylesheet" href="estilos/styles.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
   <script src="script.js"></script>
   <link rel="shortcut icon" href="imagenes/logo.png" type="">
 </head>
 <body>
 
-  <div class="container">
-    <h1>🧠 Cuestionario Emocional</h1>
+  <div class="containerForm">
+    <h1 id="h1Form">🧠 Cuestionario Emocional</h1>
     <form id="emocionalForm">
       <!-- Ansiedad -->
-      <div class="pregunta">
-        <p>1. ¿Con qué frecuencia te sientes nervioso o inquieto? </p>
+      <div class="preguntaForm">
+        <p id="PregForm">1. ¿Con qué frecuencia te sientes nervioso o inquieto? </p>
         <label><input type="radio" name="ansiedad" value="0"> Casi nunca 😊</label><br>
         <label><input type="radio" name="ansiedad" value="1"> A veces 😐</label><br>
         <label><input type="radio" name="ansiedad" value="2"> Muy seguido 😟</label><br>
@@ -23,8 +23,8 @@
       </div>
 
       <!-- P Estrés -->
-      <div class="pregunta">
-        <p>2. ¿Qué tan abrumado te has sentido últimamente? </p>
+      <div class="preguntaForm">
+        <p id="PregForm">2. ¿Qué tan abrumado te has sentido últimamente? </p>
         <label><input type="radio" name="estres" value="0"> Relajado 😎</label><br>
         <label><input type="radio" name="estres" value="1"> Un poco tenso 😬</label><br>
         <label><input type="radio" name="estres" value="2"> Bastante tenso 😩</label><br>
@@ -32,8 +32,8 @@
       </div>
 
       <!-- Tristeza -->
-      <div class="pregunta">
-        <p>3. ¿Cómo ha sido tu estado de ánimo esta semana? </p>
+      <div class="preguntaForm">
+        <p id="PregForm">3. ¿Cómo ha sido tu estado de ánimo esta semana? </p>
         <label><input type="radio" name="tristeza" value="0"> Alegre 😄</label><br>
         <label><input type="radio" name="tristeza" value="1"> Normal 🙂</label><br>
         <label><input type="radio" name="tristeza" value="2"> Un poco triste 😕</label><br>
@@ -41,20 +41,20 @@
       </div>
 
       <!-- Enojo -->
-      <div class="pregunta">
-        <p>4. ¿Con qué frecuencia te molestas por cosas pequeñas? </p>
+      <div class="preguntaForm">
+        <p id="PregForm">4. ¿Con qué frecuencia te molestas por cosas pequeñas? </p>
         <label><input type="radio" name="enojo" value="0"> Casi nunca 😇</label><br>
         <label><input type="radio" name="enojo" value="1"> A veces 😒</label><br>
         <label><input type="radio" name="enojo" value="2"> A menudo 😤</label><br>
         <label><input type="radio" name="enojo" value="3"> Todo el tiempo 😠</label>
       </div>
 
-      <button type="button" onclick="evaluar()">Enviar</button>
+      <button type="button" id="EnviarForm" onclick="evaluar()">Enviar</button>
        <!--<button type="button" href="index.html">Volver</button>-->
-        <a href="index.html" class="botonheader" style="text-decoration: none;">Volver</a>
+        <a href="index.html"  class="button" style="text-decoration: none;">Volver</a>
     </form>
 
-    <div id="resultado" class="resultado"></div>
+    <div id="resultado" class="resultadoEmocion"></div>
   </div>
 
   

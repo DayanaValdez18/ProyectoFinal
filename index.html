@@ -9,17 +9,15 @@
 
 </head>
 <body>
-   <header>
-        <nav>
-          <ul>
-                 <img src="imagenes/logo.png" class="icono"> 
-                 <li><a href="cuestionario.html"> Test</a></li>
-                  <li><a href="#contactenos"> Contactanos</a></li>
-            </ul>    
-        </nav>
-
-        </section>
-    </header>
+   <header class="header1" id="header">
+  <nav class="navbar">
+    <img src="imagenes/logo.png" class="icono" alt="Logo">
+    <ul>
+      <li><a href="cuestionario.html">Test</a></li>
+      <li><a href="#contactenos">Contáctanos</a></li>
+    </ul>
+  </nav>
+</header>
 
 <header class="hero">
   <section class="contenedor-header">
@@ -76,8 +74,8 @@
           />
         </figure>
         <div class="contenido-carta5">
-          <h3>Qué es la colina, el nutriente que es vital para nuestro cerebro (y en qué alimentos se encuentra)</h3>
-          <a href="https://www.bbc.com/mundo/articles/cwy00zzg11ro">Leer Más</a>
+          <h3>Qué es la colina, el nutriente que es vital para nuestro cerebro <br> (y en qué alimentos se <br>encuentra)</h3>
+          <a href="https://www.bbc.com/mundo/articles/cwy00zzg11ro" target="_blank" rel="noopener noreferrer">Leer Más</a>
         </div>
       </div>
       <div class="carta5">
@@ -89,7 +87,7 @@
         <div class="contenido-carta5">
           <h3>"Mi psicólogo de IA me ayudó a superar momentos difíciles": los riesgos y beneficios de usar un chatbot como terapeuta</h3>
         
-          <a href="https://www.bbc.com/mundo/articles/c1w333qq9j4o">Leer Más</a>
+          <a href="https://www.bbc.com/mundo/articles/c1w333qq9j4o" target="_blank" rel="noopener noreferrer">Leer Más</a>
         </div>
       </div>
       <div class="carta5">
@@ -100,7 +98,7 @@
         </figure>
         <div class="contenido-carta5">
           <h3>Lo que tus tiempos de reacción revelan sobre tu salud (y cómo puedes medirlos con este simple test casero)</h3>
-          <a href="https://www.bbc.com/mundo/articles/c1lme08lpq1o">Leer Màs</a>
+          <a href="https://www.bbc.com/mundo/articles/c1lme08lpq1o" target="_blank" rel="noopener noreferrer">Leer Más</a>
         </div>
       </div>
     </div>
@@ -109,23 +107,23 @@
 
 <!--Videos-->
   <div class="grid4" id="videos">
-       <a href="https://www.youtube.com/watch?v=UHylpY4nxuI" style="text-decoration: none;">
+       <a href="https://www.youtube.com/watch?v=UHylpY4nxuI" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
         <div class="carta4"> 
             <h5>Visualizaciones para <br>calmar la mente</h5>
         </div>
         </a>
 
-        <a href="https://www.youtube.com/watch?v=AjECybntXv0" style="text-decoration: none;">
+        <a href="https://www.youtube.com/watch?v=AjECybntXv0" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
         <div class="carta4">
             <h5>Sonidos que<br> calman el alma</h5>
         </div>
         </a>
-        <a href="https://www.youtube.com/watch?v=pALj6QKXc8M" style="text-decoration: none;">
+        <a href="https://www.youtube.com/watch?v=pALj6QKXc8M"  target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
         <div class="carta4">
             <h5>Mensajes positivos <br> para ti</h5>
         </div>
         </a>
-        <a href="https://www.youtube.com/watch?v=CkAOFDuxB38" style="text-decoration: none;">
+        <a href="https://www.youtube.com/watch?v=CkAOFDuxB38" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
         <div class="carta4">
             <h5>Rutina para un<br>descanso reparador</h5>
         </div>
@@ -191,6 +189,17 @@
     </footer>
 
 
+<!--Js menú-->
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
 
 </body>
 </html>
