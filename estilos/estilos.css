@@ -10,12 +10,19 @@ body {
     background-color: #ffffff;
 }
 
-
+#h3carta {
+     text-align: center;
+  color: #817298;
+}
 h1 {
     color: #4b4a4a;
     font-size: 30px;
 }
 
+h6 {
+    font-size: 18px;
+    color: #4b4a4a;
+}
 
 
 #h1grid2 {
@@ -34,7 +41,7 @@ h5 {
     color: #ffffff;
     font-size: 20px;
 }
-/* Estilos base para el header y el nav */
+/* header y nav */
 #header {
   position: fixed; /*Fijo*/
   top: 0;
@@ -46,7 +53,7 @@ h5 {
   transition: all 0.3s ease;
 }
 
-/* Aplicar bordes redondeados al hacer scroll (con JS más abajo) */
+/* bordes redondeados al hacer scroll */
 #header.scrolled {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -60,12 +67,10 @@ h5 {
   height: 70px;
 }
 
-/* Logo */
 .icono {
   height: 50px;
 }
 
-/* Menú */
 nav ul {
   display: flex;
   list-style: none;
@@ -88,6 +93,8 @@ nav li a:hover {
 }
 
 
+
+/*header*/
 
 .hero {
     background-image: linear-gradient(to top,#e7f7f5  0%,  #BDE2DF 100%);
@@ -142,11 +149,8 @@ nav li a:hover {
     height: auto;
 }
 
- 
-
-
  /*Logo*/
- .icono {
+.icono {
     padding-left: flex;
     padding-right: wrap;
     width: 100px;
@@ -158,7 +162,6 @@ nav li a:hover {
 .grid2 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /*6 columnas por defecto*/
     gap: 20px;
     height: 230px;
     padding: 0 50px;
@@ -167,22 +170,18 @@ nav li a:hover {
 .grid3 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /*6 columnas por defecto*/
     gap: 20px;
     background-color: #957bbb;
 }
 
 /*estilo de cada item*/
 .carta {
-
     background-color: #9664A9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(51, 50, 50, 0.1);
     padding: 30px;
     transition: transform 0.3s;
     text-align: center;
-
-
 }
 
 .carta3 {
@@ -229,7 +228,6 @@ nav li a:hover {
   color: grey;
 }
 
-
 .carta5 .contenido-carta5 a {
   display: inline-block;
   padding: 10px 15px;
@@ -242,6 +240,7 @@ nav li a:hover {
   background: #817298;
   color: #fff;
 }
+
 
 /*VIDEOS*/
 .grid4 {
@@ -270,7 +269,7 @@ nav li a:hover {
     color: #0b0700;
 }
 
-/* NUEVO: Contenedor en fila */
+
 #contactenos_1 {
   display: flex;
   justify-content: center;
@@ -281,8 +280,6 @@ nav li a:hover {
   background-color: #9664a90f;
 }
 
-
-/* NUEVO: Control del ancho de cada elemento */
 .item2 {
     flex: 1 1 300px;
     max-width: 400px;
@@ -342,13 +339,20 @@ nav li a:hover {
 
 
 
+/*Mapa*/
+.container-mapa {
+    margin-top: 20px;
+    padding: 20 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
+}
 
-
-
-
-
-
+#mapa {
+    padding: 5px;
+}
 
 
 /*footer siempre abajo*/
@@ -381,25 +385,6 @@ nav li a:hover {
 }
 
 
-
-/*Mapa*/
-.container-mapa {
-    margin-top: 20px;
-    padding: 20 px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-}
-
-#mapa {
-    padding: 5px;
-}
-
-
-
-
 /*footer*/
 
 .footer-bottom {
@@ -415,8 +400,12 @@ nav li a:hover {
     border: 0;
 }
 
+
+
+
+
+
  /*Responsivo*/
-/*tablets: 2 columnas*/
 @media (max-width:1024px) {
     .grid2 {
         grid-template-columns: repeat(4fr);
@@ -425,7 +414,7 @@ nav li a:hover {
     
 }
 
-/*Celulares: 1 columna*/
+/*Celulares*/
 @media (max-width: 600px){
     /*Letras*/
     h1 {
@@ -439,6 +428,9 @@ nav li a:hover {
     }
 
     h5 {
+        font-size: 15px;
+    }
+     h6 {
         font-size: 15px;
     }
     
@@ -522,6 +514,12 @@ nav li a:hover {
   .carta5 {
     margin: 15px;
   }
+/*Carta mensaje*/
+.grid6 {
+   grid-template-columns: 1fr;
+   /*padding-bottom: 600px;*/
+}
+
 }
 
 
@@ -537,9 +535,6 @@ nav li a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  background-color: rgba(255, 255, 255, 0.85); /* fondo blanco translúcido encima de la imagen */
-  backdrop-filter: blur(2px); /* efecto borroso para mejor legibilidad */
 }
 
 #h1Form {
@@ -584,3 +579,19 @@ nav li a:hover {
   margin-bottom: 2rem;
   font-weight: bold;
 }
+.grid6 {
+    display: grid;
+    gap: 20px;
+}
+.cartaFormulario {
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #9664A9;
+    padding: 30px;
+    text-align: justify;
+}
+
+.cartaimagen {
+    text-align: center;
+}
+
