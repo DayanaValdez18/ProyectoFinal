@@ -1,3 +1,15 @@
+  //menú
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+  
+  
+  
   function evaluar() {
     const ansiedad = parseInt(document.querySelector('input[name="ansiedad"]:checked')?.value || 0);
     const estres = parseInt(document.querySelector('input[name="estres"]:checked')?.value || 0);
@@ -110,3 +122,49 @@
 
     document.getElementById("resultado").innerHTML = "";
   }
+
+
+
+ //Mensaje aleatorio
+ 
+ 
+
+  window.addEventListener('DOMContentLoaded', function () {
+    const consejos = [
+      {
+        mensaje: "Respira profundo, todo va a estar bien.",
+        imagen: "imagenes/respira.png"
+      },
+      {
+        mensaje: "Estás haciendo lo mejor que puedes. Y eso es suficiente.",
+        imagen: "imagenes/esfuerzo.png"
+      },
+      {
+        mensaje: "No tengas miedo de pedir ayuda.",
+        imagen: "imagenes/ayuda.png"
+      },
+      {
+        mensaje: "Hoy es un buen día para empezar de nuevo.",
+        imagen: "imagenes/nuevoDia.png"
+      },
+      {
+        mensaje: "Cada pequeño paso cuenta.",
+        imagen: "imagenes/paso.png"
+      },
+      {
+        mensaje: "Tómate un momento para agradecer algo hoy.",
+        imagen: "imagenes/agradecer.png"
+      },
+      {
+        mensaje: "Recuerda: eres más fuerte de lo que crees.",
+        imagen: "imagenes/fuerza.png"
+      },
+    ];
+
+    const aleatorio = Math.floor(Math.random() * consejos.length);
+    const seleccionado = consejos[aleatorio];
+
+    document.getElementById("mensajeDia").textContent = seleccionado.mensaje;
+    document.getElementById("imagenConsejo").src = seleccionado.imagen;
+  });
+

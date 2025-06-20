@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calma</title>
     <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="script.js"></script>
     <link rel="shortcut icon" href="imagenes/logo.png" type="">
 
 </head>
@@ -13,6 +14,8 @@
   <nav class="navbar">
     <img src="imagenes/logo.png" class="icono" alt="Logo">
     <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="cuestionario.html">Test</a></li>
       <li><a href="#contactenos">Contáctanos</a></li>
     </ul>
@@ -38,7 +41,7 @@
 
 <center><h1 id="h1grid2">Centro de Ayuda <br>Psicologica Online</h1></center>
     <div class="grid2" id="grid_2">
-       <a href="#Blog" style="text-decoration: none;">
+       <a href="#blogg" style="text-decoration: none;">
         <div class="carta">
             <img src="imagenes/blog.png" alt="" >
             <h5>Blog</h5>
@@ -60,52 +63,64 @@
     </div>
 
 
-
-<hr style="border: none; height: 20px; margin: 0;">
-
-<!--BLOG-->
-  <!--   Tarjetas-->
     
-    <div class="container-carta5" id="Blog">
-      <div class="carta5">
-        <figure>
-          <img
-            src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/830c/live/7d9599e0-1601-11f0-8a1e-3ff815141b98.jpg.webp"
-          />
-        </figure>
-        <div class="contenido-carta5">
-          <h3>Qué es la colina, el nutriente que es vital para nuestro cerebro <br> (y en qué alimentos se <br>encuentra)</h3>
-          <a href="https://www.bbc.com/mundo/articles/cwy00zzg11ro" target="_blank" rel="noopener noreferrer">Leer Más</a>
-        </div>
+
+
+
+<!--Mensajitos-->
+<section class="calendario">
+  <h2>🗓️ Consejo emocional del día</h2>
+  <img id="imagenConsejo" src="" alt="Imagen emocional">
+  <p id="mensajeDia">Cargando mensaje...</p>
+</section>
+
+
+<section class="blog" id="blogg">
+  <center><h1>Blog emocional</h1></center>
+  <div class="grid-blog">
+
+    <article class="tarjeta-blog">
+      <img src="https://centromedicoabc.com/storage/2024/11/Hombre-en-su-coche-escuchando-musica-1024x683.webp" alt="Imagen artículo 1">
+      <div class="contenido-blog">
+        <h3>Afronta el estrés: herramientas simples que sí funcionan</h3>
+          <a href="https://centromedicoabc.com/revista-digital/recupera-tu-control-ante-un-ataque-de-ansiedad/" target="_blank" rel="noopener noreferrer">Leer Más</a>
       </div>
-      <div class="carta5">
-        <figure>
-          <img
-            src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/92fc/live/0d13e3b0-3592-11f0-8f95-179a79186756.jpg.webp"
-          />
-        </figure>
-        <div class="contenido-carta5">
-          <h3>"Mi psicólogo de IA me ayudó a superar momentos difíciles": los riesgos y beneficios de usar un chatbot como terapeuta</h3>
-        
-          <a href="https://www.bbc.com/mundo/articles/c1w333qq9j4o" target="_blank" rel="noopener noreferrer">Leer Más</a>
-        </div>
+    </article>
+
+    <article class="tarjeta-blog">
+      <img src="https://cdn-cinfasalud.cinfa.com/wp-content/uploads/2015/04/imagen-estres1.jpg?x64172" alt="Imagen artículo 1">
+      <div class="contenido-blog">
+        <h3>Como combatir el extrés</h3>
+          <a href="https://cinfasalud.cinfa.com/p/estres/" target="_blank" rel="noopener noreferrer">Leer Más</a>
       </div>
-      <div class="carta5">
-        <figure>
-          <img
-            src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/e05d/live/2f63e280-1a26-11f0-a455-cf1d5f751d2f.jpg.webp"
-          />
-        </figure>
-        <div class="contenido-carta5">
-          <h3>Lo que tus tiempos de reacción revelan sobre tu salud (y cómo puedes medirlos con este simple test casero)</h3>
-          <a href="https://www.bbc.com/mundo/articles/c1lme08lpq1o" target="_blank" rel="noopener noreferrer">Leer Más</a>
-        </div>
+    </article>
+
+     <article class="tarjeta-blog">
+      <img src="https://medlineplus.gov/images/Insomnia.jpg" alt="Imagen artículo 1">
+      <div class="contenido-blog">
+        <h3>Insomnio</h3>
+          <a href="https://medlineplus.gov/spanish/insomnia.html" target="_blank" rel="noopener noreferrer">Leer Más</a>
       </div>
-    </div>
+    </article>
+
+    <article class="tarjeta-blog">
+      <img src="https://mejorhablemos.us/wp-content/uploads/2021/04/que-es-la-ansiedad-mejor-hablemos.jpg" alt="Imagen artículo 1">
+      <div class="contenido-blog">
+        <h3>¿Ansiedad? ¿Qué hacer para combatirla?</h3>
+          <a href="https://mejorhablemos.us/ansiedad-que-es/" target="_blank" rel="noopener noreferrer">Leer Más</a>
+      </div>
+    </article>
+    <a href="blog.html" >Ir al blog</a>
+     
+  </div>
+</section>
+
+
 
 <hr style="border: none; height: 20px; margin: 0;">
 
 <!--Videos-->
+<center><h1>Videos para relajarte</h1></center>
   <div class="grid4" id="videos">
        <a href="https://www.youtube.com/watch?v=UHylpY4nxuI" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
         <div class="carta4"> 
@@ -131,10 +146,32 @@
         
     </div>
 
+<center><h1 id="h1grid22">Preguntas frecuentes</h1></center>
+<div class="container-carta6" id="Blog">
+      <div class="carta6">
+       
+        <div class="contenido-carta6">
+          <h3>¿Qué es el test emocional?</h3>
+           <p>Es una herramienta para identificar tu estado emocional actual y recibir recursos personalizados.</p>
+         </div>
+      </div>
+      <div class="carta6">
+        <div class="contenido-carta6">
+         <h3>¿La información que doy es confidencial?</h3>
+           <p>Sí, no se almacena ningún dato personal.</p>
+          </div>
+      </div>
+      <div class="carta6">
+        <div class="contenido-carta6">
+          <h3>¿Este sitio reemplaza una terapia profesional?</h3>
+           <p>No. Es un apoyo complementario, no un tratamiento clínico.</p>
+         </div>
+      </div>
+    </div>
 
 
 <!--Contacto-->
-
+<hr style="border: none; height: 20px; margin: 0;">
 <center><h1>¿Necesitas ayuda o tienes dudas? Aqui estamos para escucharte</h1></center>
 <div class="formularioContacto" id="contactenos">
     
@@ -176,30 +213,14 @@
  <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <p>Te acompañamos en un espacio seguro para <br>cuidar de tu bienestar emocional</p>
                 <img class="logo" src="imagenes/calma.png" alt="logotipo">
             </div>
-
-           
         </div>
 
         <div class="footer-bottom">
             &copy; 2025 MiWeb. <br>Todos los derechos reservados.
         </div>
     </footer>
-
-
-<!--Js menú-->
-<script>
-  window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
-    if (window.scrollY > 0) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-</script>
 
 </body>
 </html>
